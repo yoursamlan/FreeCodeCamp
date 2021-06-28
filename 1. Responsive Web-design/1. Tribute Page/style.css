@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23221f; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*====================================*/
+
+body {
+    background-color: #000;
+    color: #edece8;
+}
+
+#main {
+    height: 100vh;
+}
+
+#img-div {
+    background-color: #000;
+    width: 100%;
+    height: 70%;
+    align-content: center;
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    color: #B87333;
+    font-family: "Open Sans","Source Serif Pro", sans-serif;
+    margin-left: 5%;
+    font-size: 80px;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 0;
+    width: 50%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    
+}
+#subtitle-above {
+    color: #bab8b8;
+    font-family:"Source Serif Pro", sans-serif;
+    margin-left: 5%;
+    font-size: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 36%;
+    left: 5%;
+    right: 0;
+    width: 50%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+#subtitle-below {
+    color: #bab8b8;
+    font-family:sans-serif;
+    margin-left: 5%;
+    font-size: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    right: 0;
+    width: 50%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+#img-caption {
+    visibility: hidden;
+}
+
+#article-body {
+    width: 50%;
+    margin: 2% 5% 2% 5%;
+    font-family: "Source Serif Pro", sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
