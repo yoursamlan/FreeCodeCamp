@@ -319,3 +319,10 @@ background: #edece8;
 box-shadow:  5px 5px 10px #d5d4d1,
              -5px -5px 10px #ffffff;
 }
+
+#footer {
+    margin: 10% 0 5% 0;
+    font-size: 15px;
+    color: #777;
+    text-align: center;
+}
