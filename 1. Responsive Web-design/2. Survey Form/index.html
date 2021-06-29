@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Lunar Express</h1>
+            <p id="description" class="description text-center">
+                Boarding Form
+            </p>
+        </header>
+
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">
+                    <p>Name</p>
+                </label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">
+                    <p>Email</p>
+                </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
+
+            <div id="flex-input">
+
+                <div class="form-group" id="age">
+                    <label id="number-label" for="number">
+                        <p>Age</p>
+                    </label>
+                    <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age" />
+                </div>
+                <div class="form-group" id="sex">
+                    <label>
+                        <p>Sex</p>
+                    </label>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="PNTS">Prefer not to say</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <hr id="divider">
+            <h2>Journey Preference</h2>
+            <hr id="divider">
+
+            <div class="form-group" id="JT">
+                <p id="JT">Journey Type <br>
+                    <span class="clue">Want live with the Alien ?<br></span>
+                </p>
+                <div id="radio-div">
+
+                    <label>
+                        <input name="user-recommend" value="One Way" type="radio" class="input-radio" />One Way</label>
+                    <label>
+                        <input name="user-recommend" value="Return" type="radio" class="input-radio" checked />Return</label>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Date of your Journey<br>
+
+                    <span class="clue">Flight No. - Date - Time</span>
+                </p>
+                <select id="flight" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select from the available Flight</option>
+                    <option value="f1">MEFDW1 - 01/01/2030 - 10:10 IST</option>
+                    <option value="f2">MEFJV2 - 02/02/2030 - 11:11 IST</option>
+                    <option value="f3">MEFBV3 - 03/03/2030 - 12:12 IST</option>
+                    <option value="f4">MEFTF4 - 04/04/2030 - 13:13 IST</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Your preferred Class
+                    <span class="clue"></span>
+                </p>
+                <select id="flight" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select</option>
+                    <option value="Business">Business</option>
+                    <option value="Economy">Economy</option>
+
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Flight time amenities<br>
+                    <span class="clue">Check all that apply. Extra charges will impose.</span>
+                </p>
+                <div id="FTA">
+                    <label><input name="prefer" value="Nonveg" type="checkbox" class="input-checkbox" />Non Veg Meal</label>
+                    <label><input name="prefer" value="Veg" type="checkbox" class="input-checkbox" />Veg Meal</label>
+                    <label><input name="prefer" value="Bev" type="checkbox" class="input-checkbox" />Beverages</label>
+                    <label><input name="prefer" value="internet" type="checkbox" class="input-checkbox" />Internet (WiFi) </label>
+                    <label><input name="prefer" value="Mag" type="checkbox" class="input-checkbox" />Tabloids</label>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>Any question related to the journey?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your question here..."></textarea>
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    <input name="tnc" value="tncchecked" type="checkbox" class="input-checkbox" required />
+                    I have read and accept all &nbsp;<a href="#" target="_blank" id="tnclink"> Terms and Conditions</a> </label>
+            </div>
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+
+        </form>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+    <!-- partial -->
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <script src="./script.js"></script>
+
+</body></html>
