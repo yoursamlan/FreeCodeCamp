@@ -1,146 +1,198 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - FCC: Product Landing Page</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>FCC: Product Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-  crossorigin="anonymous"
-/>
-<div id="page-wrapper">
-  <header id="header">
-    <div class="logo">
-      <img
-        id="header-img"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-        alt="original trombones logo"
-      />
+    <!-- partial:index.partial.html -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <img src="https://screenshot.best/E6VP18.png">
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="LuEx.png" alt="Lunar Express" />
+                <!--h1 id="header-name">Lunar Express</h1-->
+            </div>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#aboutlunarexpress">About</a></li>
+                    <li><a class="nav-link" href="#howtogo">How to Go</a></li>
+                    <li><a class="nav-link" href="#pricestage">Fees</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+
+
+
+            <div class="container">
+                <div id="landing">
+                    <div id="landing-text">
+                        <h3 id="subtitle">Let's go to the ...</h3>
+                        <h1 id="maintitle">Moon</h1>
+                        <a href="https://codepen.io/amlan99/full/abWbXyP" target="_blank" id="land-link">Book NOW <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div id="rocket">
+                        <img src="rocket.jpg">
+                    </div>
+
+                </div>
+
+
+                <section id="aboutlunarexpress">
+
+                    <div id="about">
+                        <h1 id="abouthead">About Us</h1>
+                        <p>
+
+                            Lunar Express Technology Corp. a.k.a LuEx is an Indian private aerospace manufacturer, space transportation services and communications company headquartered in New Delhi, India. LuEx was founded in 2021 by Amlan Saha Kundu with the goal of reducing space transportation costs to enable the colonization of the Moon.
+                        </p>
+                        <p>
+
+                            LuEx's achievements include the first privately funded liquid-propellant rocket to reach orbit (Lunar Orbiter Launch Vehicle-1 a.k.a LOLv-1) and the first private company to build a spacecraft with a special Cryogenic Fuel (Lunexagen) , that has increased the thrust by 1.39x times in comparison with today's conventional spacecrafts. Currently LuEx is developing next generation Space Craft for Affordable, Reusable and Reliable inter-planetary communication.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+
+                <section id="howtogo">
+                    <div id="howto">
+                        <h1 id="htghead">How to GO</h1>
+                        <div class="grid">
+                            <div class="icon"><i class="fa fa-3x fa-align-justify"></i></div>
+                            <div class="desc">
+                                <h2>Fill up Boarding Form</h2>
+                                <p class="description">
+                                    Read the criteria and apply with a nominal fee.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="icon"><i class="fa fa-3x fa-running"></i></div>
+                            <div class="desc">
+                                <h2>Pass the Fitness Test</h2>
+                                <p class="description">
+                                    After verification, schedule and pass the fitness test.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fa fa-3x fa-space-shuttle" aria-hidden="true"></i>
+                            </div>
+                            <div class="desc">
+                                <h2>Choose your journey preference</h2>
+                                <p class="description">
+                                    Choose your date of journey and amenities, and then only pay the rest of the fees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="icon"><i class="fa fa-3x fa-user-astronaut"></i></div>
+                            <div class="desc">
+                                <h2>Now Sit back, Relax and Explore ...</h2>
+                                <p class="description">
+                                    After verification, schedule and pass the fitness test.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="videodiv">
+                            <iframe width="1024" height="576" src="https://www.youtube.com/embed/3f_21N3wcX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <div id="pricestage">
+                    <h1 id="aboutFees">Fees</h1>
+                    <p id="Disclaimer">We accept ALL currencies with latest conversion rate. All fees given here are subject to change at any time. For any query/ clarification regarding the fees, feel free to contact us. Thank you.</p>
+                    
+
+                        <section id="pricing">
+                        <div class="product" id="tenor">
+                            <div class="level">Application Fee</div>
+                            <h2>$5 Million</h2>
+                            <ol>
+                                <li>All taxes are included.</li>
+                                <li>Included Physical Fitness </li>
+                                <li>test upon Selection.</li>
+                                <li><b style="color: red">NO Refund</b> on cancellation.</li>
+
+                            </ol>
+                            <button class="btn"><a href="https://codepen.io/amlan99/full/abWbXyP" target="_blank">Book NOW</a></button>
+                        </div>
+                        <div class="product" id="bass">
+                            <div class="level">Trip to the Moon</div>
+                            <h2>$2.75 Billion</h2>
+                            <ol>
+                                <li>All taxes are included.</li>
+                                <li>Return trips are included.</li>
+                                <li>All extra amenities are <b>FREE</b></li>
+
+                                <li>Cancellation charge is <b style="color: red"> ONLY 2%</b></li>
+                            </ol>
+                            <button class="btn"><a href="https://codepen.io/amlan99/full/abWbXyP" target="_blank">Book NOW</a></button>
+                        </div>
+                        <div class="product" id="valve">
+                            <div class="level">COMBO Offer</div>
+                            <h2>$1.5 billion</h2>
+                            <ol>
+                                <li>Taxes are <b>EXTRA</b></li>
+                                <li>Amenities are <b>EXTRA</b></li>
+                                <li>Return trips are included.</li>
+                                <li>Cancellation charge is <b style="color: red"> ONLY 5%</b></li>
+                            </ol>
+                            <button class="btn"><a href="https://codepen.io/amlan99/full/abWbXyP" target="_blank">Book NOW</a></button>
+                        </div>
+                    </section>
+
+                </div>
+                
+                <div id="offer">
+                <section id="hero">
+                    <h2 id="offertext">For Questions and Exciting OFFERS</h2>
+                    <form id="form" action="https://www.example.com">
+                        <input name="email" id="email" type="email" placeholder="Enter your email" required />
+                         <input id="submit" type="submit"  value="Submit" class="sendbtn"/>
+                        
+                    </form>
+                </section>
+                    </div>
+                
+                <div id="footer">
+                <footer>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <span><b>Copyright 2021, Amlan Saha Kundu</b></span>
+                    
+                    <div class="social">
+        <a class="sicon" href="https://github.com/yoursamlan" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="sicon" href="https://freecodecamp.org/yoursamlan" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+        <a class="sicon" href="https://codepen.io/amlan99" target="_blank"><i class="fab fa-codepen"></i></a>
     </div>
-
-    <nav id="nav-bar">
-      <ul>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="container"></div>
-
-
-
-  <div class="container">
-    <section id="features">
-      <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-        <div class="desc">
-          <h2>Premium Materials</h2>
-          <p>
-            Our trombones use the shiniest brass which is sourced locally. This
-            will increase the longevity of your purchase.
-          </p>
+                </footer>
+                    </div>
+            </div>
         </div>
-      </div>
-      <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-        <div class="desc">
-          <h2>Fast Shipping</h2>
-          <p>
-            We make sure you recieve your trombone as soon as we have finished
-            making it. We also provide free returns if you are not satisfied.
-          </p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="icon">
-          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-        </div>
-        <div class="desc">
-          <h2>Quality Assurance</h2>
-          <p>
-            For every purchase you make, we will ensure there are no damages or
-            faults and we will check and test the pitch of your instrument.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="how-it-works">
-      <iframe
-        id="video"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </section>
-    <section id="pricing">
-      <div class="product" id="tenor">
-        <div class="level">Tenor Trombone</div>
-        <h2>$600</h2>
-        <ol>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="bass">
-        <div class="level">Bass Trombone</div>
-        <h2>$900</h2>
-        <ol>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="valve">
-        <div class="level">Valve Trombone</div>
-        <h2>$1200</h2>
-        <ol>
-          <li>Plays similar to a Trumpet</li>
-          <li>Great for Jazz Bands</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-    </section>
-        <section id="hero">
-    <h2>Handcrafted, home-made masterpieces</h2>
-    <form id="form" action="https://www.example.com">
-      <input
-        name="email"
-        id="email"
-        type="email"
-        placeholder="Enter your email address"
-        required
-      />
-      <input id="submit" type="submit" value="Get Started" class="btn" />
-    </form>
-  </section>
-    <footer>
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <span>Copyright 2016, Original Trombones</span>
-    </footer>
-  </div>
-</div>
-<!-- partial -->
-  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+    </div>
+    <!-- partial -->
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <script src="./script.js"></script>
 
-</body>
-</html>
+</body></html>
