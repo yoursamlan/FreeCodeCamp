@@ -338,7 +338,7 @@ nav > ul {
     box-shadow: 9px 9px 18px #a1a1a1,
         -9px -9px 18px #ffffff;
     border-top-left-radius: 0px;
-    border-top-right-radius: 
+    border-top-right-radius:0px;
 }
 
 .nav-link {
