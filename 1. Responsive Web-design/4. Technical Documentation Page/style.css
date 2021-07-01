@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+/* MY CARD*/
+
+#my-card {
+    height: 20vh;
+    width: 25vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border: none;
+border-radius: 20px;
+background: transparent;
+box-shadow:  3px 3px 6px rgba(72, 72, 72, 0.5),
+             -3px -3px 6px rgba(98, 98, 98, 0.5);
+}
+
+.social {
+    display: inline-flex;
+    color: #fff;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sicon {
+    color: white;
+    width: 4vw;
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+.sicon:hover{
+    color: aquamarine;
+}
+#name-n-link {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+    border: none;
+border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+background: transparent;
+box-shadow:  3px 3px 6px rgba(72, 72, 72, 0.5),
+             -3px -3px 6px rgba(98, 98, 98, 0.5);
+    
+}
+
+#my-dp {
+    border-radius: 50%;
+    border: 5px solid rgba(255, 155, 155, 0.5);
+    padding: 0.1vw;
+    margin: 0.5vw;
+}
+
+#my-dp:hover{
+    border: 5px solid aquamarine;
+}
+
+#author {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#my-name {
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+}
+/*===================================================*/
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6c6b6b;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+/*====================================*/
+
+::placeholder{
+    color: #aaa;
+}
+
+body {
+    font-family: "Montserrat", "Comfortaa", sans-serif;
+    background: url("https://preview.redd.it/oiyekfak8el51.jpg?width=10668&format=pjpg&auto=webp&s=202ce81671b3b4c15c115cfdb7a3db5a7f21ddf5");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7fffd4;
+    text-decoration: none;
+}
+section{
+    padding-top: 10vh;
+    height:90vh;
+}
+
+#page {
+    width: 95%;
+    height: 90vh;
+    display: block;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 5vh;
+    overflow-y: scroll;
+    border-radius: 20px;
+
+
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -backdrop-filter: blur(5.0px);
+    -backdrop-filter: blur(5.0px);
+
+}
+
+/* Create a column layout with Flexbox */
+#nav-bar {
+    display: flex;
+}
+@media only screen and (max-width: 815px) {
+    #nav-bar{
+        display: inline-grid;
+    }
+}
+
+/* Left column (menu) */
+.left {
+    width: 25vw;
+    padding: 15px 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 5vh;
+    bottom: 5vh;
+    left: 2.5vw;
+    border-radius: 20px;
+}
+
+.left h2 {
+    padding-left: 8px;
+
+}
+
+/* Right column (page content) */
+.right {
+    width: 75vw;
+    margin-left: 24vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Style the search box */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    color: #82f5ff;
+    background: rgba(50,50,50,0.5);
+    border-radius: 20px;
+    border:none;
+}
+
+#mySearch:focus{
+    outline: none;
+}
+/* Style the navigation menu inside the left column */
+#myMenu {
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+
+    position: fixed;
+    top: 23vh;
+    height: 72vh;
+    width: 25vw;
+    overflow-y: scroll;
+        margin-left: 0.5vw;
+
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -backdrop-filter: blur(5.0px);
+    -backdrop-filter: blur(5.0px);
+
+
+
+}
+
+#myMenu li a {
+    padding: 12px 12px 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+
+}
+
+#myMenu li a:hover {
+    background-color: rgba(11, 0, 137, 0.26);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+
+#hero-fixed {
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -backdrop-filter: blur(5.0px);
+    -backdrop-filter: blur(5.0px);
+    padding: 1vw;
+    margin-left: 0.5vw;
+    position: fixed;
+    top: 5vh;
+    width: 25vw;
+    height: 18vh;
+    border-radius: 20px;
+}
+
+#main-doc {
+    text-align: justify;
+}
+
+.code-container {
+    margin: 2%;
+        background: rgba(50,50,50,0.5);
+    width: 100%;
+    padding: 2% 10%;
+    border-radius: 20px;
+    text-align: left;
+}
+.code-container code{
+    font-size: 120%;
+    white-space: pre-wrap;
+    padding-left: -5%;
+}
+
+#Chapter-head {
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    padding: 5vh;
+    display: block;
+    height: 60vh;
+    background: rgba(34, 34, 34, 0.34);
+    border-radius: 20px;
+}
+
+#rundiv {
+    background-color: rgba(17, 65, 69, 0.5);
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    display: flex;
+}
+
+.run{
+    margin: 2vh 5vw 2vh 2vw;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    color: #ffffff;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 10px;
+    border:none;
+    text-align:center;
+}
+.run:focus{
+    outline:none;
+}
+.runbtn{
+    background: #19619f;
+    color: white;
+    width: 30vw;
+    height: 5vh;
+    font-size: 18px;
+    font-family: "Montserrat", "Comfortaa", sans-serif;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 2vw;
+    margin-left: 0;
+    
+}
+.runbtn:hover{
+    background: #008aff;
+}
+
+.right p{
+    margin-left: 2vw;
+    
+}
+
+section h3{
+    text-align: left;
+    color:aquamarine;
+    font-size: 26px;
+}
+
+#first-chap {
+    height: 90vh;
+}
+
+#main-title {
+    font-size: 2em;
+}
+
+#trunstr {
+    width: 70%;
+    margin-right: 5%;
+}
+
+#trunnum {
+    width: 25%;
+    margin-left: 0;
+    margin-right: 2vw;
+}

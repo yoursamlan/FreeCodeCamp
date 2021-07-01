@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Documentation </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="page">
+
+
+        <div id="nav-bar">
+
+            <div class="left">
+                <nav id="navbar">
+                    <div id="hero-fixed">
+                        <header>
+                            <h2>Index</h2>
+
+                        </header>
+                        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    </div>
+
+                    <ul id="myMenu">
+                        <li><a href="#Convert_Celsius_to_Fahrenheit" class="nav-link">
+                                Convert Celsius to Fahrenheit
+                            </a></li>
+                        <li><a href="#Reverse_a_String" class="nav-link">
+                                Reverse a String
+                            </a></li>
+                        <li><a href="#Factorialize_a_Number" class="nav-link">
+                                Factorialize a Number
+                            </a></li>
+                        <li><a href="#Truncate_a_String" class="nav-link">
+                                Truncate a String
+                            </a></li>
+                        <li><a href="#Title_Case_a_Sentence" class="nav-link">
+                                Title Case a Sentence
+                            </a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right">
+                <main id="main-doc">
+                    <div id="first-chap">
+                        <div id="Chapter-head">
+                            <h2 id="main-title">Basic Algorithm Scripting</h2>
+                            <hr>
+                            <p>
+                                An algorithm is a series of step-by-step instructions that describe how to do something.To write an effective algorithm, it helps to break a problem down into smaller parts. Here are a few examples, provided by <a href="https://freecodecamp.org" target="_blank"> freeCodeCamp</a>. Let's check these out.</p>
+                            <p>
+                                <br>Designed and Coded by:
+                            </p>
+                            <div id="author">
+                                <div id="my-card">
+                                    <div id="name-n-link">
+                                        <h3 id="my-name">Amlan Saha Kundu</h3>
+                                        <div class="social">
+                                            <a class="sicon" href="https://github.com/yoursamlan" target="_blank"><i class="fa fa-github"></i></a>
+                                            <a class="sicon" href="https://freecodecamp.org/yoursamlan" target="_blank"><i class="fa fa-free-code-camp"></i></a>
+                                            <a class="sicon" href="https://in.linkedin.com/in/amlan99" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+
+                                    </div>
+
+                                    <img src="https://assets.codepen.io/2239358/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1624984345&width=512" alt="Amlan Saha Kundu's DP" id="my-dp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="main-section" id="Convert_Celsius_to_Fahrenheit">
+                        <header>
+                            <h3>Convert Celsius to Fahrenheit</h3>
+                            <hr>
+                        </header>
+                        <p>
+                            The algorithm to convert from Celsius to Fahrenheit is</p>
+                        <div class="code-container">
+                            <li>Fahrenheit = The temperature in Celsius times 9/5, plus 32.</li>
+                        </div>
+                        <p>You are given a variable celsius representing a temperature in Celsius. Use the variable fahrenheit already defined and assign it the Fahrenheit temperature equivalent to the given Celsius temperature. Use the algorithm mentioned above to help convert the Celsius temperature to Fahrenheit.</p>
+                        <div class="code-container">
+                            <code id="tof">
+                                function convertToF(celsius) {
+                                let fahrenheit = (celsius * 9/5) + 32;
+                                return fahrenheit;
+                                }
+                            </code>
+                        </div>
+                        <p>Let's run the code...</p>
+                        <div id="rundiv">
+                            <input class="run" id="celsiusv" type="number" placeholder="Enter a value in Celsius" /> <button class="runbtn" onclick=convertToF()>Convert</button>
+                        </div>
+
+
+
+                    </section>
+                    <section class="main-section" id="Reverse_a_String">
+                        <header>
+                            <h3>Reverse a String</h3>
+                            <hr>
+                        </header>
+                        <p>
+                            To reverse the provided string, we will go through the following approach</p>
+                        <div class="code-container">
+                            <ol>
+                                <li>Use the split() method to return a new array</li>
+                                <li>Use the reverse() method to reverse the new created array</li>
+                                <li>Use the join() method to join all elements of the array into a string</li>
+                                <li>Return the reversed string.</li>
+                            </ol>
+                        </div>
+                        <p>
+                            Now let's execute the afore-mentioned algorithm in JavaScript...
+                        </p>
+                        <div class="code-container">
+                            <code>
+                                function reverseString(str) {
+                                return str.split("").reverse().join("");
+                                }
+                            </code>
+                        </div>
+                        <p>Let's run the code...</p>
+                        <div id="rundiv">
+                            <input class="run" id="reversev" type="text" placeholder="Enter a string" /> <button class="runbtn" onclick=reverseString()>Reverse</button>
+                        </div>
+
+                    </section>
+                    <section class="main-section" id="Factorialize_a_Number">
+                        <header>
+                            <h3>Factorialize a Number</h3>
+                            <hr>
+                        </header>
+                        <p>If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n. Factorials are often represented with the shorthand notation n!. For example: 5! = 1 * 2 * 3 * 4 * 5 = 120</p>
+                        <p>Remember, only integers greater than or equal to zero will be supplied to the function.</p>
+                        <!--div class="code-container">
+                            <ol>
+                                <li>If the number is less than 0, reject it.</li>
+                                <li>If the number is 0, its factorial is 1.</li>
+                                <li>Otherwise, call the recursive procedure again</li>
+                            </ol>
+                        </div-->
+                        <div class="code-container">
+                            <code>
+                                function factorialize(num) {
+                                if (num < 0) return -1; else if (num==0) return 1; else { return (num * factorialize(num - 1)); } } </code>
+                        </div>
+                        <p>Let's run the code...</p>
+                        <div id="rundiv">
+                            <input class="run" id="factnum" type="number" placeholder="Enter a positive integer" /> <button class="runbtn" onclick=factorial()>Factorial</button>
+                        </div>
+
+
+
+                    </section>
+                    <section class="main-section" id="Truncate_a_String">
+                        <header>
+                            <h3>Truncate a String</h3>
+                            <hr>
+                        </header>
+                        <p>Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending.</p>
+                        <p>Here, we will use the substring() method. The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string. This method extracts the characters in a string between "start" and "end", not including "end" itself. If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1, 4) == str.substring(4, 1).</p>
+                        <p>Let's see how we can solve our problem using substring().</p>
+                        <div class="code-container">
+                            <code>
+                                function truncateString(str, num) {
+                                if (num >= str.length) return str;
+                                else return str.substring(0, num) + "...";
+                                }
+                            </code>
+                        </div>
+                        <p>Let's run the code...</p>
+                        <div id="rundiv">
+                            <input class="run" id="trunstr" type="text" placeholder="Enter an Extraaaaa largeee string" />
+                            <input class="run" id="trunnum" type="number" placeholder="Limit" min="0" max="99" />
+                            <button class="runbtn" onclick=Truncate()>Truncate</button>
+                        </div>
+
+
+                    </section>
+
+
+
+
+                    <section class="main-section" id="Title_Case_a_Sentence">
+                        <header>
+                            <h3>Title Case a Sentence</h3>
+                            <hr>
+                        </header>
+                        <p>Here, we have to return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.</p>
+                        <p>We will take the help of Map object here. The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. A Map object iterates its elements in insertion order — a for...of loop returns an array of [key, value] for each iteration.</p>
+                        <div class="code-container">
+                            <code>
+function titleCase(str) {
+  return str.toLowerCase().split(' ').map(function(word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+}
+
+                            </code>
+                        </div>
+                        <p>Let's run the code...</p>
+                        <div id="rundiv">
+                            <input class="run" id="tcase" type="text" placeholder="Enter a string" /> <button class="runbtn" onclick=TC()>Title Case</button>
+                        </div>
+
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+</body></html>
