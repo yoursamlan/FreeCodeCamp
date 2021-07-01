@@ -89,10 +89,10 @@
                         <p>You are given a variable celsius representing a temperature in Celsius. Use the variable fahrenheit already defined and assign it the Fahrenheit temperature equivalent to the given Celsius temperature. Use the algorithm mentioned above to help convert the Celsius temperature to Fahrenheit.</p>
                         <div class="code-container">
                             <code id="tof">
-                                function convertToF(celsius) {
-                                let fahrenheit = (celsius * 9/5) + 32;
-                                return fahrenheit;
-                                }
+function convertToF(celsius) {
+    let fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
                             </code>
                         </div>
                         <p>Let's run the code...</p>
@@ -123,9 +123,9 @@
                         </p>
                         <div class="code-container">
                             <code>
-                                function reverseString(str) {
-                                return str.split("").reverse().join("");
-                                }
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
                             </code>
                         </div>
                         <p>Let's run the code...</p>
@@ -150,8 +150,15 @@
                         </div-->
                         <div class="code-container">
                             <code>
-                                function factorialize(num) {
-                                if (num < 0) return -1; else if (num==0) return 1; else { return (num * factorialize(num - 1)); } } </code>
+function factorialize(num) {
+    if (num < 0) return -1;
+    else if (num==0) return 1;
+    else {
+        return (num * factorialize(num - 1));
+        }
+ } 
+                                            
+                                            </code>
                         </div>
                         <p>Let's run the code...</p>
                         <div id="rundiv">
@@ -171,10 +178,10 @@
                         <p>Let's see how we can solve our problem using substring().</p>
                         <div class="code-container">
                             <code>
-                                function truncateString(str, num) {
-                                if (num >= str.length) return str;
-                                else return str.substring(0, num) + "...";
-                                }
+function truncateString(str, num) {
+    if (num >= str.length) return str;
+    else return str.substring(0, num) + "...";
+}
                             </code>
                         </div>
                         <p>Let's run the code...</p>
