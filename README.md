@@ -1,4 +1,4 @@
-# FreeCodeCamp
+# freeCodeCamp
 This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCamp.org)
 
 ## Responsive Web Design
