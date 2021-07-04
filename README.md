@@ -1,5 +1,5 @@
 # FreeCodeCamp
-My Projects for Free Code Camp
+This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCamp.org)
 
 ## Responsive Web Design
 - [Build a Tribute Page](https://yoursamlan.github.io/FreeCodeCamp/1.%20Responsive%20Web-design/1.%20Tribute%20Page/)
@@ -9,4 +9,4 @@ My Projects for Free Code Camp
 - [Build a Personal Portfolio](https://yoursamlan.github.io/FreeCodeCamp/1.%20Responsive%20Web-design/5.%20Personal%20Portfolio/)
 
 - Here is the Certificate of Completion for the Responsive Web Design course, offered by freeCodeCamp.
--  <img src='https://github.com/yoursamlan/FreeCodeCamp/blob/main/1.%20Responsive%20Web-design/Certificate1.PNG?raw=true'>
+<img src="https://github.com/yoursamlan/FreeCodeCamp/blob/main/1.%20Responsive%20Web-design/Certificate1.PNG?raw=true" width="50%">
