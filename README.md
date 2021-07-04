@@ -9,4 +9,4 @@ This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCam
 - [Build a Personal Portfolio](https://yoursamlan.github.io/FreeCodeCamp/1.%20Responsive%20Web-design/5.%20Personal%20Portfolio/)
 
 - Here is the Certificate of Completion for the Responsive Web Design course, offered by freeCodeCamp.
--  ![Certificate](https://github.com/yoursamlan/FreeCodeCamp/blob/main/1.%20Responsive%20Web-design/Certificate1.PNG?raw=true | width=100)
+<img src="https://github.com/yoursamlan/FreeCodeCamp/blob/main/1.%20Responsive%20Web-design/Certificate1.PNG?raw=true" width="50%">
