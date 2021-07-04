@@ -18,3 +18,6 @@ This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCam
 ## JavaScript Algorithms and Data Structures
 ---
 
+- [Palindrome Checker](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/1.%20Palindrome%20Checker/)
+- [Roman Numerals Converter](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/2.%20Roman%20Numerals/)
+- [Caesar Cipher (ROT13)](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/3.%20Caesar%20Cipher/)
