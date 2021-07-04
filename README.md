@@ -8,4 +8,5 @@ My Projects for Free Code Camp
 - [Build a Technical Documentation](https://yoursamlan.github.io/FreeCodeCamp/1.%20Responsive%20Web-design/4.%20Technical%20Documentation%20Page/)
 - [Build a Personal Portfolio](https://yoursamlan.github.io/FreeCodeCamp/1.%20Responsive%20Web-design/5.%20Personal%20Portfolio/)
 
-- <img src='https://github.com/yoursamlan/FreeCodeCamp/blob/main/1.%20Responsive%20Web-design/Certificate-RWD.PNG?raw=true'>
+- Here is the Certificate of Completion for the Responsive Web Design course, offered by freeCodeCamp.
+-  <img src='https://github.com/yoursamlan/FreeCodeCamp/blob/main/1.%20Responsive%20Web-design/Certificate1.PNG?raw=true'>
