@@ -25,3 +25,4 @@ This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCam
 
  Here is the Certificate of Completion for the JavaScript Algorithms and Data Structures, offered by freeCodeCamp.
  
+ <img src="https://github.com/yoursamlan/freeCodeCamp/blob/main/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/Certificate2.PNG?raw=true" width="50%">
