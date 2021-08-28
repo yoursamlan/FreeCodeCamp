@@ -1,97 +1,109 @@
 //by Amlan Saha Kundu on 5th July, 2021.
-function main() {
-	str = document.getElementById("textbox").value;
 
-	function teleCheck(text) {
-		const regex = /^1?\s?(\(\d{3}\)|\d{3})(\s|-)?\d{3}(\s|-)?\d{4}$/gm
-		return regex.test(text);
-	}
-	alert(teleCheck(str));
+function checkCashRegister(price, cash, cid) {
+  const currencies = [
+    {
+      name: 'ONE HUNDRED',
+      amount: 100
+    },
+    {
+      name: 'TWENTY',
+      amount: 20
+    },
+    {
+      name: 'TEN',
+      amount: 10
+    },
+    {
+      name: 'FIVE',
+      amount: 5
+    },
+    {
+      name: 'ONE',
+      amount: 1
+    },
+    {
+      name: 'QUARTER',
+      amount: 0.25
+    },
+    {
+      name: 'DIME',
+      amount: 0.10
+    },
+    {
+      name: 'NICKEL',
+      amount: 0.05
+    },
+    {
+      name: 'PENNY',
+      amount: 0.01
+    }
+  ];
+  const output = {
+    status: null,
+    change: []
+  }
+  let CN = cash - price;
+  let CG;
+  const cidTotal = cid.reduce((total, currency) => {
+    return total + currency[1];
+  }, 0);
+
+  if (cidTotal > CN) {
+    output.status = 'OPEN';
+    cid = cid.reverse();
+
+    output.change = currencies.reduce((result, currency, index) => {
+      CG = 0;
+
+      while (cid[index][1] > 0 && CN >= currency.amount) {
+        CN -= currency.amount;
+        cid[index][1] -= currency.amount;
+        CG += currency.amount;
+        CN = Math.round(CN * 100) / 100;
+      }
+
+      if (CG > 0) {
+        result.push([currency.name, CG]);
+      }
+      return result;
+    }, []);
+
+    if (CN > 0) {
+      output.status = 'INSUFFICIENT_FUNDS';
+      output.change = [];
+    }
+  }
+  else {
+
+    if (cidTotal < CN) {
+      output.status = 'INSUFFICIENT_FUNDS';
+    }
+    else {
+      output.status = 'CLOSED';
+      output.change = cid;
+    }
+  }
+  return output;
 }
+
 
 /*               TEST RESULTS
 =============================================
-telephoneCheck("555-555-5555") should return a boolean.
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]) should return an object.
 
 Passed
-telephoneCheck("1 555-555-5555") should return true.
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]) should return {status: "OPEN", change: [["QUARTER", 0.5]]}.
 
 Passed
-telephoneCheck("1(555) 555 - 5555") should return true.
+checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]) should return {status: "OPEN", change: [["TWENTY", 60], ["TEN", 20], ["FIVE", 15], ["ONE", 1], ["QUARTER", 0.5], ["DIME", 0.2], ["PENNY", 0.04]]}.
 
 Passed
-telephoneCheck("5555555555") should return true.
+checkCashRegister(19.5, 20, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) should return {status: "INSUFFICIENT_FUNDS", change: []}.
 
 Passed
-telephoneCheck("555-555-5555") should return true.
+checkCashRegister(19.5, 20, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 1], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) should return {status: "INSUFFICIENT_FUNDS", change: []}.
 
 Passed
-telephoneCheck("(555)555-5555") should return true.
-
-Passed
-telephoneCheck("1(555)555-5555") should return true.
-
-Passed
-telephoneCheck("555-5555") should return false.
-
-Passed
-telephoneCheck("5555555") should return false.
-
-Passed
-telephoneCheck("1 555)555-5555") should return false.
-
-Passed
-telephoneCheck("1 555 555 5555") should return true.
-
-Passed
-telephoneCheck("1 456 789 4444") should return true.
-
-Passed
-telephoneCheck("123**&!!asdf#") should return false.
-
-Passed
-telephoneCheck("55555555") should return false.
-
-Passed
-telephoneCheck("(6054756961)") should return false.
-
-Passed
-telephoneCheck("2 (757) 622-7382") should return false.
-
-Passed
-telephoneCheck("0 (757) 622-7382") should return false.
-
-Passed
-telephoneCheck("-1 (757) 622-7382") should return false.
-
-Passed
-telephoneCheck("2 757 622-7382") should return false.
-
-Passed
-telephoneCheck("10 (757) 622-7382") should return false.
-
-Passed
-telephoneCheck("27576227382") should return false.
-
-Passed
-telephoneCheck("(275)76227382") should return false.
-
-Passed
-telephoneCheck("2(757)6227382") should return false.
-
-Passed
-telephoneCheck("2(757)622-7382") should return false.
-
-Passed
-telephoneCheck("555)-555-5555") should return false.
-
-Passed
-telephoneCheck("(555-555-5555") should return false.
-
-Passed
-telephoneCheck("(555)5(55?)-5555") should return false.
-
-Passed
-
-==============================================
+checkCashRegister(19.5, 20, [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) should return {status: "CLOSED", change: [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]}==============================================
 */
