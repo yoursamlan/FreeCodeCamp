@@ -1,3 +1,4 @@
+![](https://d33wubrfki0l68.cloudfront.net/52edd2dfddbec5db22a65dba39951af8fa9bdff6/006f7/img/fcc_primary_large.svg)
 This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCamp.org)
 
 ## Responsive Web Design
