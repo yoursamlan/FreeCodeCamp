@@ -20,4 +20,8 @@ This is the repository of my projects for [freeCodeCamp](https://www.freeCodeCam
 - [Palindrome Checker](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/1.%20Palindrome%20Checker/)
 - [Roman Numerals Converter](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/2.%20Roman%20Numerals/)
 - [Caesar Cipher (ROT13)](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/3.%20Caesar%20Cipher/)
-- [Telephone Number Validator](https://yoursamlan.github.io/FreeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/4.%20Telephone%20Number%20Validator/)
+- [Telephone Number Validator](https://yoursamlan.github.io/freeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/4.%20Telephone%20Number%20Validator/)
+- [Cash Register](https://yoursamlan.github.io/freeCodeCamp/2.%20JavaScript%20Algorithms%20and%20Data%20Structures/5.%20Cash%20Register/)
+
+ Here is the Certificate of Completion for the JavaScript Algorithms and Data Structures, offered by freeCodeCamp.
+ 
