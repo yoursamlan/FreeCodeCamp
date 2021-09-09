@@ -469,10 +469,5 @@ function newQuote() {
   var cA = Qdb[v].author;
   document.getElementById("text").innerHTML = cQ;
   document.getElementById("author").innerHTML = "- " + cA;
-  document.getElementById("tweet-quote").href =
-  "https://twitter.com/intent/tweet?hashtags=quotes&text=" +
-  '"' +
-  cQ +
-  '" ' +
-  cA;
+  document.getElementById("tweet-quote").href = "https://twitter.com/intent/tweet?hashtags=quotes&text="+'"'+cQ+'" '+cA;
 }
