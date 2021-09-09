@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Neumorphic Random Quote Machine : freeCodeCamp</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body onload="newQuote()">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div id="quote-box-container">
+    <div id="quote-box">
+      <div class="row" id="text">
+        <quote>
+        </quote>
+      </div>
+      <div class="row">
+        <div class="col-sm-6" id="blank">
+          <div class="row" id="btn-array">
+            <div class="col-xs-8">
+              <button id="new-quote" onClick="newQuote()">New Quote</button>
+            </div>
+            <div class="col-xs-12" id="tweet-btn-container">
+              <a id="tweet-quote" href="" target="_blank"> <i class="fa fa-twitter" style="font-size:40px"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" id="author">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="credit">
+    created by <a href="https://github.com/yoursamlan" target="_blank">Amlan Saha Kundu</a>
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
